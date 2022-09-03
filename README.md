@@ -229,3 +229,41 @@ Once installed, open the app and head over to the `Extensions` tab on the left s
 7. Material Theme - `Equinusocio.vsc-material-theme`
 8. Prettier - `esbenp.prettier-vscode`
 
+Once installed, we now need to update settings for these extensions, first step is to copy the following config
+
+* CMD+SHIFT+P -> Open User Settings (JSON)
+
+paste the following in there
+
+```json
+{
+    "workbench.colorTheme": "Material Theme Ocean High Contrast",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "prettier.requireConfig": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.zoomLevel": 2,
+    "editor.minimap.enabled": false,
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontWeight": "450",
+    "workbench.colorCustomizations": {
+        "[Material Theme Ocean High Contrast]": {}
+    },
+    "editor.linkedEditing": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    }
+}
+```
+
