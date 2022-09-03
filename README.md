@@ -211,3 +211,21 @@ node --version
 ```
 
 ## VS Code
+
+VS Code was installed in [this section](#install-some-brew-casks), if you skipped it run the following command
+
+```sh
+brew install visual-studio-code
+```
+
+Once installed, open the app and head over to the `Extensions` tab on the left side panel and look for the following packages and install them:
+
+1. Code Spell Checker - `streetsidesoftware.code-spell-checker`
+2. Dotenv Official - `dotenv.dotenv-vscode`
+3. ES Lint - `dbaeumer.vscode-eslint`
+4. FontSize Shortcuts - `fosshaas.fontsize-shortcuts`
+5. Git Lens - `eamodio.gitlens`
+6. Material Icon Theme - `PKief.material-icon-theme`
+7. Material Theme - `Equinusocio.vsc-material-theme`
+8. Prettier - `esbenp.prettier-vscode`
+
