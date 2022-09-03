@@ -8,6 +8,8 @@ This repo contains info on all the apps / settings / tools I use on my Mac.
 - [OS Settings](#os-settings)
 - [Browser](#browser)
 - [Node.JS](#nodejs)
+- [VS Code](#vs-code)
+- [Github setup](#github-setup)
 
 ## What Macbook do I have ?
 
