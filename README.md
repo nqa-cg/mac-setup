@@ -5,6 +5,9 @@ This repo contains info on all the apps / settings / tools I use on my Mac.
 - [What Macbook do I have ?](#what-macbook-do-i-have)
 - [Homebrew / Terminal / Shell](#homebrew--terminal--shell)
 - [Install Some Brew Casks](#install-some-brew-casks)
+- [OS Settings](#os-settings)
+- [Browser](#browser)
+- [Node.JS](#nodejs)
 
 ## What Macbook do I have ?
 
@@ -112,3 +115,99 @@ xargs brew install < casks.txt
 
 Wait for installation to go through, once done, close iterm2. Few of the apps in here require a few more customizations, we will get to those later.
 
+## OS Settings
+
+These are my preferred settings:
+
+### Finder
+
+* Finder -> Preferences
+    * General -> Show these items on desktop -> Select None
+    * General -> New finder windows show -> Home folder
+    * Tags -> Select None
+    * Sidebar -> Show these items in the sidebar -> Select Desktop, Documents, Downloads, Home folder, Locations (all except primary hdd)
+    * Advanced -> Show all filename extensions
+    * Advanced -> Show warning before changing an extension -> No
+    * Advanced -> When performing a search -> Search the current folder
+* View
+    * Show Sidebar
+    * Show Preview
+    * Show Toolbar
+    * Show Tab Bar
+    * Show Path Bar
+
+### Dock
+
+I don't use the Dock at all. It takes up screen space, and I can use Spotlight Search to launch apps. I make the dock as small as possible and auto hide it.
+
+* System Preferences
+    * Dock & Menu Bar
+        * Size -> Small as possible
+        * Position on screen -> Right
+        * Automatically hide and show the Dock -> Yes
+
+### Trackpad
+
+* System Preferences
+    * Trackpad -> Point and Click
+        * Enable Tap to click
+    * Trackpad -> More Gestures
+        * App Expose
+    * Accessibility -> Pointer Control -> Trackpad Options
+        * Enable dragging -> Three finder drag
+
+### Menu Bar Customization
+
+Items from left to right are supposed to be as follows:
+1. Keep you awake
+2. Rectangle
+3. Bluetooth
+4. Battery
+5. Control Center
+6. Date
+7. Time
+
+* System Preferences -> Dock and Menu Bar
+    * Wifi -> Don't show in menu bar
+    * Bluetooth -> Show in menu bar
+    * Battery -> Show Percentage
+    * Clock -> Date Options
+        * Show the day of the week
+    * Clock -> Time Options
+        * Show AM/PM
+        * Display the time with seconds
+    * Spotlight -> Don't show in menu bar
+
+## Browser
+
+[Install chrome](https://www.google.com/chrome/downloads/) and setup chrome profiles. Apart from base chrome the only other browser extension I use is [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en).
+
+## Node.JS
+
+I use nvm to manage the installed versions of Node.js on my machine. This allows me to easily switch between Node.js versions depending on the project I'm working in.
+
+See installation instructions [here](https://github.com/nvm-sh/nvm#installing-and-updating).
+
+OR run this command (make sure v0.39.1 is still the latest)
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
+
+After installation you'll want to add the following to your .bash_profile / .zshrc etc.
+
+```sh
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
+Now that nvm is installed, you can install a specific version of node.js and use it:
+
+```sh
+nvm install node
+nvm ls
+nvm use node
+node --version
+```
+
+## VS Code
