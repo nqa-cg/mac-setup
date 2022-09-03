@@ -267,6 +267,8 @@ paste the following in there
 }
 ```
 
+I also prefer setting the `Material Theme: Set Accent Color` as `Teal`
+
 ## Github setup
 
 Github should be installed on your terminal. If not go set that up first, follow [these steps](https://cli.github.com/manual/installation).
