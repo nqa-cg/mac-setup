@@ -88,18 +88,17 @@ write to file, save and exit. Now running `cls` in terminal will run clear comma
 
 ## Install Some Brew Casks
 
-Here are a few casks I like to install, create a file called `apps.txt` inside a folder with the following contents:
+Here are a few casks I like to install, create a file called `casks.txt` inside a folder with the following contents:
 
 ```txt
-iterm2
-rectangle
 app-cleaner
-keepingyouawake
 discord
-vlc
+keepingyouawake
 keka
-visual-studio-code
+rectangle
 sublime-text
+visual-studio-code
+vlc
 ```
 Edit this list to be any brew cask you like,
 
@@ -108,9 +107,8 @@ Edit this list to be any brew cask you like,
 Now, what we want to do is to install these casks, to do that, run the following command inside the same folder,
 
 ```sh
-xargs brew install < apps.txt
+xargs brew install < casks.txt
 ```
 
 Wait for installation to go through, once done, close iterm2. Few of the apps in here require a few more customizations, we will get to those later.
-
 

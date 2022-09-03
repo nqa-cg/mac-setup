@@ -1,0 +1,8 @@
+app-cleaner
+discord
+keepingyouawake
+keka
+rectangle
+sublime-text
+visual-studio-code
+vlc
