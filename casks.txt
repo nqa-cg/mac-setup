@@ -1,3 +1,4 @@
+alfred
 app-cleaner
 discord
 keepingyouawake

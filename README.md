@@ -9,23 +9,24 @@ This repo contains info on all the apps / settings / tools I use on my Mac.
 - [Browser](#browser)
 - [Node.JS](#nodejs)
 - [VS Code](#vs-code)
+- [Alfred](#alfred)
 - [Github setup](#github-setup)
 
 ## What Macbook do I have ?
 
 I am using a M1 macbook pro 14" 2021. These are the specs at a glance:
 
-* Apple M1 Pro
-* 32GB Memory
-* 1TB Flash Storage
-* 10 cores (8 performance and 2 efficiency)
-* macOS Monterey version 12.5
+- Apple M1 Pro
+- 32GB Memory
+- 1TB Flash Storage
+- 10 cores (8 performance and 2 efficiency)
+- macOS Monterey version 12.5
 
 ## Homebrew / Terminal / Shell
 
 ### Homebrew
 
-[Homebrew](https://brew.sh/), THE missing package manager for macOS, allows us to install *the stuff we need* from the command line.
+[Homebrew](https://brew.sh/), THE missing package manager for macOS, allows us to install _the stuff we need_ from the command line.
 
 To install Homebrew, open up a terminal app and run the following command:
 
@@ -33,13 +34,13 @@ To install Homebrew, open up a terminal app and run the following command:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-After homebrew installation is done, make sure to read the last few lines printed, there could be further steps needed to be done to complete the installation. 
+After homebrew installation is done, make sure to read the last few lines printed, there could be further steps needed to be done to complete the installation.
 
 ### Terminal
 
 The first app I like to install is to replace the built-in `Terminal` with [iTerm2](https://iterm2.com/). Check out their [documentation](https://iterm2.com/documentation.html) for more information on what it can do.
 
-We can install this using a [Homebrew cask](https://github.com/Homebrew/homebrew-cask) for iterm2. 
+We can install this using a [Homebrew cask](https://github.com/Homebrew/homebrew-cask) for iterm2.
 
 > NOTE: a homebrew cask is a full application, similar to what we would install from the Apple store or when we download a DMG.
 
@@ -51,30 +52,30 @@ brew install iterm2
 
 Once installed, close terminal (like completely, CMD+Q) and launch iterm2. Customize the settings / preference to your liking, you can do that by pressing `CMD+COMMA`. These are my preffered settings:
 
-* General
-    * Closing
-        * Quit when all windows are closed
-    * Window
-        * Adjust window when changing font size
-* Profiles
-    * General
-        * Working directory -> Reuse previous session's directory
-    * Colors
-        * Color Presets
-            * Smoooooth
-    * Text
-        * Use thin strokes for anti-aliased text -> On Retina Displays
-        * Font -> [Fira Code](https://github.com/tonsky/FiraCode)
-        * Font Weight -> Retina
-        * Font Size -> 24
-    * Window
-        * Transparency -> 25
-        * Blur -> 10
-        * Blending -> 50
-        * Use transparency
-    * Keys
-        * Key Mappings -> Presets -> Natural Text Editing
-            * this allows us to use keyboard shortcuts native to macOS. 
+- General
+  - Closing
+    - Quit when all windows are closed
+  - Window
+    - Adjust window when changing font size
+- Profiles
+  - General
+    - Working directory -> Reuse previous session's directory
+  - Colors
+    - Color Presets
+      - Smoooooth
+  - Text
+    - Use thin strokes for anti-aliased text -> On Retina Displays
+    - Font -> [Fira Code](https://github.com/tonsky/FiraCode)
+    - Font Weight -> Retina
+    - Font Size -> 24
+  - Window
+    - Transparency -> 25
+    - Blur -> 10
+    - Blending -> 50
+    - Use transparency
+  - Keys
+    - Key Mappings -> Presets -> Natural Text Editing
+      - this allows us to use keyboard shortcuts native to macOS.
 
 ### Shell
 
@@ -89,6 +90,7 @@ nano .zshrc
 
 alias cls="clear"
 ```
+
 write to file, save and exit. Now running `cls` in terminal will run clear command!
 
 ## Install Some Brew Casks
@@ -96,6 +98,7 @@ write to file, save and exit. Now running `cls` in terminal will run clear comma
 Here are a few casks I like to install, create a file called `casks.txt` inside a folder with the following contents:
 
 ```txt
+alfred
 app-cleaner
 discord
 keepingyouawake
@@ -105,6 +108,7 @@ sublime-text
 visual-studio-code
 vlc
 ```
+
 Edit this list to be any brew cask you like,
 
 > TIP: you can lookup if a brew casks exists using `brew search <cask name>`
@@ -123,44 +127,45 @@ These are my preferred settings:
 
 ### Finder
 
-* Finder -> Preferences
-    * General -> Show these items on desktop -> Select None
-    * General -> New finder windows show -> Home folder
-    * Tags -> Select None
-    * Sidebar -> Show these items in the sidebar -> Select Desktop, Documents, Downloads, Home folder, Locations (all except primary hdd)
-    * Advanced -> Show all filename extensions
-    * Advanced -> Show warning before changing an extension -> No
-    * Advanced -> When performing a search -> Search the current folder
-* View
-    * Show Sidebar
-    * Show Preview
-    * Show Toolbar
-    * Show Tab Bar
-    * Show Path Bar
+- Finder -> Preferences
+  - General -> Show these items on desktop -> Select None
+  - General -> New finder windows show -> Home folder
+  - Tags -> Select None
+  - Sidebar -> Show these items in the sidebar -> Select Desktop, Documents, Downloads, Home folder, Locations (all except primary hdd)
+  - Advanced -> Show all filename extensions
+  - Advanced -> Show warning before changing an extension -> No
+  - Advanced -> When performing a search -> Search the current folder
+- View
+  - Show Sidebar
+  - Show Preview
+  - Show Toolbar
+  - Show Tab Bar
+  - Show Path Bar
 
 ### Dock
 
 I don't use the Dock at all. It takes up screen space, and I can use Spotlight Search to launch apps. I make the dock as small as possible and auto hide it.
 
-* System Preferences
-    * Dock & Menu Bar
-        * Size -> Small as possible
-        * Position on screen -> Right
-        * Automatically hide and show the Dock -> Yes
+- System Preferences
+  - Dock & Menu Bar
+    - Size -> Small as possible
+    - Position on screen -> Right
+    - Automatically hide and show the Dock -> Yes
 
 ### Trackpad
 
-* System Preferences
-    * Trackpad -> Point and Click
-        * Enable Tap to click
-    * Trackpad -> More Gestures
-        * App Expose
-    * Accessibility -> Pointer Control -> Trackpad Options
-        * Enable dragging -> Three finder drag
+- System Preferences
+  - Trackpad -> Point and Click
+    - Enable Tap to click
+  - Trackpad -> More Gestures
+    - App Expose
+  - Accessibility -> Pointer Control -> Trackpad Options
+    - Enable dragging -> Three finder drag
 
 ### Menu Bar Customization
 
 Items from left to right are supposed to be as follows:
+
 1. Keep you awake
 2. Rectangle
 3. Bluetooth
@@ -169,16 +174,16 @@ Items from left to right are supposed to be as follows:
 6. Date
 7. Time
 
-* System Preferences -> Dock and Menu Bar
-    * Wifi -> Don't show in menu bar
-    * Bluetooth -> Show in menu bar
-    * Battery -> Show Percentage
-    * Clock -> Date Options
-        * Show the day of the week
-    * Clock -> Time Options
-        * Show AM/PM
-        * Display the time with seconds
-    * Spotlight -> Don't show in menu bar
+- System Preferences -> Dock and Menu Bar
+  - Wifi -> Don't show in menu bar
+  - Bluetooth -> Show in menu bar
+  - Battery -> Show Percentage
+  - Clock -> Date Options
+    - Show the day of the week
+  - Clock -> Time Options
+    - Show AM/PM
+    - Display the time with seconds
+  - Spotlight -> Don't show in menu bar
 
 ## Browser
 
@@ -233,43 +238,97 @@ Once installed, open the app and head over to the `Extensions` tab on the left s
 
 Once installed, we now need to update settings for these extensions, first step is to copy the following config
 
-* CMD+SHIFT+P -> Open User Settings (JSON)
+- CMD+SHIFT+P -> Open User Settings (JSON)
 
 paste the following in there
 
 ```json
 {
-    "workbench.colorTheme": "Material Theme Ocean High Contrast",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "prettier.requireConfig": true,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "window.zoomLevel": 2,
-    "editor.minimap.enabled": false,
-    "explorer.confirmDelete": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.fontLigatures": true,
-    "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontWeight": "450",
-    "workbench.colorCustomizations": {
-        "[Material Theme Ocean High Contrast]": {}
-    },
-    "editor.linkedEditing": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true
-    }
+  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "prettier.requireConfig": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 2,
+  "editor.minimap.enabled": false,
+  "explorer.confirmDelete": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontWeight": "450",
+  "workbench.colorCustomizations": {
+    "[Material Theme Ocean High Contrast]": {}
+  },
+  "editor.linkedEditing": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
 }
 ```
 
 I also prefer setting the `Material Theme: Set Accent Color` as `Teal`
+
+## Alfred
+
+Alfred was installed in [this section](#install-some-brew-casks), if you skipped it run the following command
+
+```sh
+brew install --cask alfred
+```
+
+Once installed, open alfred and `Begin Setup`. Don't bug powerpack and skip that step. Give alfred access to accessibility and file disk.
+
+Now you want to change the shortcut to open alfred to `CMD + Space`, to do that, open
+
+- System Preferences -> Keyboard -> Shortcuts -> Spotlight -> uncheck all shortcuts
+
+Now open alfred, open alfred settings by hitting `CMD + comma`
+
+- General -> Alfred Hotkey -> `CMD + Space`
+
+> TIP: use `'` or `CMD + Space + Space` to lookup folders or files
+> TIP: to open the finder location where a file is located, hit `CMD + Enter`
+
+### Alfred Preferences
+
+1. Features -> Web Search
+
+- change google to `g`
+- change maps to `m`
+- apple maps -> ☐ enabled
+- change youtube to `yt`
+- add giphy
+  - add custom search
+  - search URL: `https://giphy.com/search/{query}`
+  - encode spaces: `-`
+  - title: `Giphy`
+  - keyword: `gif`
+  - download giphy icon and set it as custom search icon
+
+2. Features -> System
+
+- Empty Trash -> ✅ confirm
+- Restart -> ✅ confirm
+- Shutdown -> ✅ confirm
+- Volume up -> ☐
+- Volume down -> ☐
+
+3. Appearance
+
+- Alfred macOS Dark
+- Options -> Hide Hat on Alfred Window
+- Options -> I want to see -> 5
 
 ## Github setup
 
@@ -315,8 +374,8 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 Head over to [github.com](https://github.com/) and login
 
-* Click profile picture on top-left -> settings
-* Access -> SSH and GPG keys -> New SSH Key
+- Click profile picture on top-left -> settings
+- Access -> SSH and GPG keys -> New SSH Key
 
 Give a suitable title, Key type will be `Authentication Key` and inside the Key text field, paste the public key already copied with the last command we ran.
 Hit Add SSH Key and you are all set!
