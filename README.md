@@ -14,13 +14,7 @@ This repo contains info on all the apps / settings / tools I use on my Mac.
 
 ## What Macbook do I have ?
 
-I am using a M1 macbook pro 14" 2021. These are the specs at a glance:
-
-- Apple M1 Pro
-- 32GB Memory
-- 1TB Flash Storage
-- 10 cores (8 performance and 2 efficiency)
-- macOS Monterey version 12.5
+I am using a M1 macbook pro (restricting more details here)
 
 ## Homebrew / Terminal / Shell
 
@@ -337,10 +331,10 @@ Github should be installed on your terminal. If not go set that up first, follow
 Now, I prefer github integrated via SSH, before we do that, we need to setup github account globally on this machine.
 
 ```sh
-git config --global user.name "Naman Avasthi"
+git config --global user.name "<Your Name>"
 git config --global user.name
 
-git config --global user.email "naman.avasthi@gmail.com"
+git config --global user.email "<cg full email>@capgroup.com"
 git config --global user.email
 ```
 
@@ -356,7 +350,7 @@ Now, lets start setting up our ssh connection with our github account. Please fo
 First step is to establish a ssh key on your local machine, this is going to generate a public and private key and we are going to expose the public key in our github profile online.
 
 ```sh
-ssh-keygen -t ed25519 -C “naman.avasthi@gmail.com"
+ssh-keygen -t ed25519 -C "naman.avasthi@gmail.com"
 
 Generating public/private algorithm key pair.
 Enter a file in which to save the key (/Users/YOU/.ssh/id_algorithm): [Press enter]
