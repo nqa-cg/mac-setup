@@ -3,6 +3,7 @@
 This repo contains info on all the apps / settings / tools I use on my Mac.
 
 - [What Macbook do I have ?](#what-macbook-do-i-have)
+- [Access](#access)
 - [Homebrew / Terminal / Shell](#homebrew--terminal--shell)
 - [Install Some Brew Casks](#install-some-brew-casks)
 - [OS Settings](#os-settings)
@@ -15,6 +16,21 @@ This repo contains info on all the apps / settings / tools I use on my Mac.
 ## What Macbook do I have ?
 
 I am using a M1 macbook pro (restricting more details here)
+
+## Access
+
+You would need a mac admin access to move forward with this doc and carry out the different installation and setup instructions.
+
+Head over to [access central](https://accesscentral.capgroup.com/identityiq/home.jsf) and request for the following 2 access roles:
+
+1. Mac Developer Admin Access
+2. macOS Device Management Production WebEx Meeting Scheduler Read Only Access
+
+Feel free to chat with your manager about the same :)
+
+Assuming you have the above two roles assigned to you, head over to `Self Service` (an application pre-installed on your CG mac), find an app called `Privileges` (looks like an open lock icon) and install it.
+
+You should be all set to follow along with the instructions below, go forth and conquer!
 
 ## Homebrew / Terminal / Shell
 
@@ -350,7 +366,7 @@ Now, lets start setting up our ssh connection with our github account. Please fo
 First step is to establish a ssh key on your local machine, this is going to generate a public and private key and we are going to expose the public key in our github profile online.
 
 ```sh
-ssh-keygen -t ed25519 -C "naman.avasthi@gmail.com"
+ssh-keygen -t ed25519 -C "<full cg email>@capgroup.com"
 
 Generating public/private algorithm key pair.
 Enter a file in which to save the key (/Users/YOU/.ssh/id_algorithm): [Press enter]
@@ -373,3 +389,23 @@ Head over to [github.com](https://github.com/) and login
 
 Give a suitable title, Key type will be `Authentication Key` and inside the Key text field, paste the public key already copied with the last command we ran.
 Hit Add SSH Key and you are all set!
+
+## Possible Debugging
+
+> If these steps don't work on your machine, try the following steps.
+
+creating keygen(s) should automatically add it to the running ssh agent. At times this doesn't happen due to access restrictions.
+
+check if your generated keygen is added to the agent,
+
+```sh
+ssh-add -l
+```
+
+if your keygen doesn't show up, try adding it manually using `sudo`
+
+```sh
+sudo ssh-add ~/.ssh/private_key_file
+```
+
+try running `ssh-add -l` again and now it should show you your keygen !
