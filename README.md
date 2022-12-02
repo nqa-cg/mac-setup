@@ -250,42 +250,7 @@ Once installed, we now need to update settings for these extensions, first step 
 
 - CMD+SHIFT+P -> Open User Settings (JSON)
 
-paste the following in there
-
-```json
-{
-  "workbench.colorTheme": "Material Theme Ocean High Contrast",
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "prettier.requireConfig": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "window.zoomLevel": 2,
-  "editor.minimap.enabled": false,
-  "explorer.confirmDelete": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontWeight": "450",
-  "workbench.colorCustomizations": {
-    "[Material Theme Ocean High Contrast]": {}
-  },
-  "editor.linkedEditing": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  }
-}
-```
+paste the contents of `vscode-user-settings.json` from this repo
 
 I also prefer setting the `Material Theme: Set Accent Color` as `Teal`
 
