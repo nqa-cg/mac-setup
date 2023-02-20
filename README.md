@@ -254,6 +254,16 @@ paste the contents of `vscode-user-settings.json` from this repo
 
 I also prefer setting the `Material Theme: Set Accent Color` as `Teal`
 
+I work with TS a lot and when working on libraries ts definitions change a lot and VS code has a nack to not pick up the latest definitions in a mono-repo. To prevent those red squiggly lines you have to either re-load the VS code instance or go to:
+
+- F1 -> >Developer: Reload Window
+
+You will notice the shortcut for this is `⌘ + R` but that doesn't seem to work. To fix this,
+
+- F1 -> >Developer: Reload Window -> click the cog icon -> in the `when` tag -> right click `isDevelopment` -> select `Change when expression` -> delete all the text -> hit `Enter` on keyboard
+
+This will re-load the VS Code instance every time you hit `⌘ + R` or whatever is your reload shortcut.
+
 ## Alfred
 
 Alfred was installed in [this section](#install-some-brew-casks), if you skipped it run the following command
